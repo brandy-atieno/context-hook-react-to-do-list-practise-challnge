@@ -5,7 +5,7 @@ export const TodoList = () => {
   return (
     <ul  className="todos">
        {todoList.map((todo, index) => (
-        <li key={index} >{todo}<button  onClick={removeTodo}>Delete</button>
+        <li key={index} >{todo}<button  onClick={()=>removeTodo(index)}>Delete</button>
        </li>
        )
        )}
